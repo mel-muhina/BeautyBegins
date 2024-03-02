@@ -15,19 +15,7 @@
    
    /* Navigation Bar */
  
-   header {
-    margin: 0;
-    padding: 0;
-   }
  
-   .logo {
-    position: fixed;
-    float: left;
-    margin: 0;
-    z-index: 99;
-     
-  }
-  
  
    .nav {
     text-align: right; 
@@ -69,7 +57,22 @@
    .nav a:active {
     color: hsl(329, 100%, 65%);
    }
+
+   header {
+    margin: 0;
+    padding: 0;
+   }
+ 
+  /* .logo {
+    width: 20%;
+    position: absolute;
+    top: 0.3rem; 
+    left: 20%;
+    transform: translateX(-60%);
+    z-index: 1; /
+  } */
    
+  
    /* Intro try 2 */
 
    .intro-container {
