@@ -422,10 +422,6 @@ button:hover {
     cursor: pointer;
 }
 
-button {
-
-}
-
 
 
 /* Footer */
@@ -450,24 +446,35 @@ footer {
        
     }
 
+    .intro-container { 
+      display: flex;
+      margin-top: -12rem;
+      width: 100%;
+      overflow: auto;
+    }
+
     .intro-inner {
-        overflow-y: auto;
+        
     }
 
     .intro-inner h1 {
         font-size: 4rem;
-        margin-top: 10rem;
+        margin-top: 12rem;
+        margin-left: 1rem;
+        
     }
 
     .intro-inner button {
-      display: none;
+      display: none; 
       }
 
       .about-container {
         display: grid;
-        width: auto;
+        width: 95%;
         grid-template-columns: 1fr; /* Two columns with equal width */
-        padding: 0;
+        padding: 0.2rem;
+        overflow: hidden;
+        text-align: center;
          }
 
          .about-container img {
@@ -479,6 +486,7 @@ footer {
             grid-template-columns: 1fr; /* Two columns with equal width */
             padding: 0;
             margin: 0 auto;
+            overflow: hidden;
             
         }
           
@@ -487,4 +495,24 @@ footer {
            display: none;
             
         }
+
+   .advert-text {
+    grid-column: 1; 
+    margin: 0.2rem;
+    padding: 0.5rem;
+    width: 95%;
+    overflow: hidden;
+    text-align: center;
+   }
+
+   .break-container {
+    text-align: center;
+    overflow: hidden;
+  }
+
+   .break-inner, .break-text  {
+display: flex;
+flex-wrap: wrap;
+    
+ }
 }
