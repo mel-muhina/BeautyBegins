@@ -445,15 +445,22 @@ footer {
 /* Media query for small screens */
 @media (max-width: 768px) { 
 
-    * {
-       
-    }
+   
+  .nav {
+    position: relative; /* Ensure a positioning context */
+    z-index: 3; /* Set a higher z-index value for the navigation bar */
+}
+
+.nav li {
+    z-index: 3; /* Set a higher z-index for the list items within the navigation */
+}
 
     .intro-container { 
-      display: flex;
+      display: inline-flex;
       margin-top: -12rem;
       width: 100%;
       overflow: auto;
+      z-index: 1;
     }
 
     .intro-inner {
@@ -464,6 +471,7 @@ footer {
         font-size: 4rem;
         margin-top: 12rem;
         margin-left: 1rem;
+        z-index: 2;
         
     }
 
